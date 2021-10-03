@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html 
+{
+  background: linear-gradient(#7ecff5, rgb(0, 83, 161));
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+body 
+{
+  font-family: 'Montserrat', sans-sarif;
+}
+header {
+  padding: 30px;
+  font-size: 30px;
+  background-color : #303030;
+  color: white;
+  text-align: center;
+  cursor: default;
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+header>span {
+  float: left;
+  margin-left: 5px;
+  margin-top: 2px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #303030;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.2s linear;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #aaaaaa;
+  display: block;
+  transition: 0.2s linear;
+}
+
+.sidenav a:hover {
+  color: rgb(255, 254, 254);
+  text-shadow: 0 0 10px #f1f1f1,  0 0 15px #f1f1f1,  0 0 20px #f1f1f1;
+  transition: 0.2s linear;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: none;
+  transition: 0.2s linear;
+}
+
+.closebtn:hover {
+  background: none;
+  color: black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+details {
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 10px 7px 20px 7px;
+  background: #ffffff4d;
+}
+
+summary {
+  font-size: 18px;
+  font-weight: 900;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 5px 0px;
+}
+
+p {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+footer {
+  padding: 20px 0px;
+  margin-right: 0;
+  background: linear-gradient(250deg, #7ecff5, #0053a1);
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  margin: 0%;
+  background: linear-gradient(280deg, #4bc6ff, #1100ff00);
+} 
+#main {
+  transition: margin-left .5s;
+}
+
+@media only screen and (max-width: 550px) 
+{
+  header{font-size: 25px;}
+
+  header>span {
+    margin-left: 5px;
+    margin-top: -2px;
+    font-size: 25px;
+  }
+
+  details {
+    font-size: 15px;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  header{font-size: 15px;}
+
+  header>span {
+   margin-left: -10px;
+   margin-top: -5px;
+   font-size: 20px;
+  }
+
+  details {
+    font-size: 12px;
+  }
+
+  summary {
+    font-size: 15px;
+  }
+}
+
